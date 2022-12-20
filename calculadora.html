@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    
+    <div class="calculadora">
+        <div id="Pantalla">0</div>
+        <div class="Teclado-Operaciones">
+            <button class="signos" onclick="signos('C')">C</button>
+            <button class="signos" onclick="signos('<-')"><-</button>
+            <button class="signos" onclick="signos('=')">=</button>
+            <button class="signos" id="potencia" onclick="Pantalla('^'); signos('^');">^</button>
+            <button class="signos" id="raiz" onclick="Pantalla('√'); signos('√')">√</button>
+            <button class="signos" id="multiplicacion" onclick="Pantalla('X'); signos('X')">X</button>
+            <button class="signos" id="division" onclick="Pantalla('/'); signos('/')">/</button>
+            <button class="signos" id="suma" onclick="Pantalla('+'); signos('+')">+</button>
+            <button class="signos" id="resta" onclick="Pantalla('-'); signos('-')">-</button>
+        </div>
+        <div class="Teclado-Numeros">
+            <button class="numeros" onclick="Pantalla('7')">7</button>
+            <button class="numeros" onclick="Pantalla('8')">8</button>
+            <button class="numeros" onclick="Pantalla('9')">9</button>
+            <button class="numeros" onclick="Pantalla('4')">4</button>
+            <button class="numeros" onclick="Pantalla('5')">5</button>
+            <button class="numeros" onclick="Pantalla('6')">6</button>
+            <button class="numeros" onclick="Pantalla('1')">1</button>
+            <button class="numeros" onclick="Pantalla('2')">2</button>
+            <button class="numeros" onclick="Pantalla('3')">3</button>
+            <button class="numeros" onclick="Pantalla('0')">0</button>
+            <button class="numeros" onclick="Pantalla('.')">.</button>
+        </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
